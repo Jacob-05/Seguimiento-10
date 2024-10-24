@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tareas.css">
+    <title>Task Master</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <input type="text" id="taskInput" placeholder="¿Qué tienes por hacer hoy?">
+            <button id="addTaskButton">Agregar tarea</button>
+        </header>
+        <div class="kanban">
+            <div class="column" id="pending">
+                <h2>Pendientes</h2>
+                <div class="task-container"></div>
+            </div>
+            <div class="column" id="doing">
+                <h2>Haciendo</h2>
+                <div class="task-container"></div>
+            </div>
+            <div class="column" id="completed">
+                <h2>Completada</h2>
+                <div class="task-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./tareas.js"></script>
+</body>
+</html>

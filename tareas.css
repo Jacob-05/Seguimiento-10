@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.kanban {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.task-container {
+    margin-top: 10px;
+}
+
+.task {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.task::after {
+    content: '➔';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.task.done::after {
+    content: '⇄';
+}
